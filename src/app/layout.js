@@ -37,11 +37,11 @@ export default function RootLayout({ children }) {
 
               <nav className=' hidden ml-4 sm:flex sm:w-[100%]'>
                 <ul className='flex gap-x-6 grow'>
-                  <li className='text-white grow'>Soul League</li>
-                  <li className='text-white grow'>Liste des équipes</li>
-                  <li className='text-white grow'>Liste des joueurs</li>
-                  <li className='text-white grow'>Tournois</li>
-                  <li className='text-white grow'>A propos</li>
+                  <li className='text-white grow text-center'>Soul League</li>
+                  <li className='text-white grow text-center'>Liste des équipes</li>
+                  <li className='text-white grow text-center'>Liste des joueurs</li>
+                  <li className='text-white grow text-center'>Tournois</li>
+                  <li className='text-white grow text-center'>A propos</li>
                 </ul>
               </nav>
           </div>
