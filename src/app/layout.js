@@ -1,5 +1,9 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
+import Image from 'next/image'
+import localFont from 'next/font/local'
+
+const splatFont = localFont({ src: './../../public/fonts/Splatfont2.ttf'})
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -11,7 +15,30 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={splatFont.className}>
+        <header className='bg-black_with_opacity'>
+          <div className='flex items-center justify-between ml-4 mr-4'>
+            <Image
+              priority
+              src="/images/soul_cup.png"
+              width={75}
+              height={75}
+              alt='Logo de la Soul Cup'
+            />
+
+            <Image
+              priority
+              src="/images/mobile/hamburger_mobile.svg"
+              width={35}
+              height={35}
+              alt='Hamburger button to access menu'
+            />
+          </div>
+
+        </header>
+        {children}
+
+      </body>
     </html>
   )
 }
