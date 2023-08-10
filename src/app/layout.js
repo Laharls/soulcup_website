@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google'
 import Image from 'next/image'
 import localFont from 'next/font/local'
 
-const splatFont = localFont({ src: './../../public/fonts/Splatfont2.ttf'})
+const splatFont = localFont({ src: './../../public/fonts/Splatfont2.ttf' })
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={splatFont.className}>
         <header className='bg-black_with_opacity'>
-          <div className='flex items-center justify-between ml-4 mr-4'>
+          <div className='flex items-center justify-between ml-4 mr-4 sm:justify-start'>
             <Image
               priority
               src="/images/soul_cup.png"
@@ -32,7 +32,18 @@ export default function RootLayout({ children }) {
               width={35}
               height={35}
               alt='Hamburger button to access menu'
+              className='sm:hidden'
             />
+
+              <nav className=' hidden ml-4 sm:flex sm:w-[100%]'>
+                <ul className='flex gap-x-6 grow'>
+                  <li className='text-white grow'>Soul League</li>
+                  <li className='text-white grow'>Liste des équipes</li>
+                  <li className='text-white grow'>Liste des joueurs</li>
+                  <li className='text-white grow'>Tournois</li>
+                  <li className='text-white grow'>A propos</li>
+                </ul>
+              </nav>
           </div>
 
         </header>
