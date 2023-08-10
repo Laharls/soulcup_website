@@ -25,8 +25,8 @@ export default function List_Team() {
     return (
         <main className="min-h-screen">
             <div className="flex flex-col justify-center items-center">
-                <div className="mb-8">
-                    <h1 className="text-center w-[325px] leading-9 text-[25px]">Liste des Equipes ayant participées à une compétition Soul Cup</h1>
+                <div className="mb-8 flex justify-center items-center">
+                    <h1 className="text-center w-[325px] leading-9 text-[25px] drop-shadow-red text-white mt-8 sm:w-[80%]">Liste des Equipes ayant participées à une compétition Soul Cup</h1>
                 </div>
 
                 <div className="grid md:grid-cols-2 md: gap-20 xl:grid-cols-4 2xl:grid-cols-6">
