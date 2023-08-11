@@ -2,6 +2,7 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import Image from 'next/image'
 import localFont from 'next/font/local'
+import Link from 'next/link'
 
 const splatFont = localFont({ src: './../../public/fonts/Splatfont2.ttf' })
 
@@ -37,11 +38,11 @@ export default function RootLayout({ children }) {
 
               <nav className=' hidden ml-4 sm:flex sm:w-[100%]'>
                 <ul className='flex gap-x-6 grow'>
-                  <li className='text-white grow text-center'>Soul League</li>
-                  <li className='text-white grow text-center'>Liste des équipes</li>
-                  <li className='text-white grow text-center'>Liste des joueurs</li>
-                  <li className='text-white grow text-center'>Tournois</li>
-                  <li className='text-white grow text-center'>A propos</li>
+                  <li className='text-white grow text-center hover:drop-shadow-red hover:transition'><Link href="/soul_league">Soul League</Link></li>
+                  <li className='text-white grow text-center hover:drop-shadow-red hover:transition'><Link href="list_team">Liste des équipes</Link></li>
+                  <li className='text-white grow text-center hover:drop-shadow-red hover:transition'>Liste des joueurs</li>
+                  <li className='text-white grow text-center hover:drop-shadow-red hover:transition'>Tournois</li>
+                  <li className='text-white grow text-center hover:drop-shadow-red hover:transition'><Link href="/about">A propos</Link></li>
                 </ul>
               </nav>
           </div>
