@@ -1,9 +1,9 @@
 import Team from "../_components/team"
 
 const teamData = [
-    { teamName: "Nana_tora", imagePath: "/images/teams/hana_tora.jpg" },
-    { teamName: "Ink Souls : Roster Maria", imagePath: "/images/teams/ink_souls.png" },
-    { teamName: "NInk Souls : Roster Rosina", imagePath: "/images/teams/ink_souls_rosina.png" },
+    { teamName: "Hana_tora", imagePath: "/images/teams/hana_tora.jpg" },
+    { teamName: "Ink Souls : Maria", imagePath: "/images/teams/ink_souls.png" },
+    { teamName: "NInk Souls : Rosina", imagePath: "/images/teams/ink_souls_rosina.png" },
     { teamName: "Disband", imagePath: "/images/teams/disband.png" },
     { teamName: "Draconink Spirits", imagePath: "/images/teams/draconink.png" },
     { teamName: "Phantom Thieves", imagePath: "/images/teams/phantomthieves.webp" },
