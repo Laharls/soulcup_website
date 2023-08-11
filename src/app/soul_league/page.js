@@ -1,4 +1,4 @@
-import DivResult from "../_components/div_results"
+import DivResult from "../_components/div_results_resume"
 
 const divData = [
     {
